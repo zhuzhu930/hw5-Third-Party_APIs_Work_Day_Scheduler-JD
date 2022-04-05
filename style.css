@@ -1,14 +1,15 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: fantasy;
   font-size: 16px;
   line-height: 1;
+  background-color: whitesmoke;
 }
 
 textarea {
   background: transparent;
   border: none;
   resize: none;
-  color: #000000;
+  color: black;
   border-left: 1px solid black;
   padding: 10px;
 }
@@ -18,7 +19,6 @@ textarea {
   background-color: transparent;
   color: black;
   border-radius: 0;
-  border-bottom: 10px solid black;
 }
 
 .description {
@@ -26,24 +26,32 @@ textarea {
 }
 
 .time-block {
-  text-align: center;
-  border-radius: 15px;
+  text-align: left;
+  border-radius: 20px;
+}
+
+.container {
+  margin-bottom: 20px;
 }
 
 .row {
   white-space: pre-wrap;
+  border-top: 1px solid;
   height: 80px;
-  border-top: 1px solid white;
 }
 
 .hour {
-  background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
+  background-color: #0088f7;
+  color: whitesmoke;
+  font-weight: bolder;
+  text-align: center;
+  border: 1px solid grey;
+  border-radius: 5px;
 }
 
+/* setting different colors for blocked hours and available hours.  */
 .past {
-  background-color: #d3d3d3;
+  background-color: #a7a5a5;
   color: white;
 }
 
@@ -57,11 +65,12 @@ textarea {
   color: white;
 }
 
+/* Style the save button.  */
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5;
+  background-color: #0088f7;
   color: white;
 }
 
